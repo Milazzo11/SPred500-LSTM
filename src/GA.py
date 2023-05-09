@@ -210,7 +210,8 @@ class GA:
             # parents continue to next generation instead of children
 
     
-    def _fin_display(self, fin_output_function, fin_output_arg_tuple, finalization_function):
+    def _fin_display(self, fin_output_function, fin_output_arg_tuple,
+            finalization_function):
         """
         Executes output function for finalization of all individuals.
         
