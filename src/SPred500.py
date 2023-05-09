@@ -295,7 +295,7 @@ def generate_model(ticker, n_forecast, GA_optimize, show_plot):
         model, rmse = default_gen(ticker, prefs, n_forecast)
         # generate default model
         
-    if model == None:
+    if model is None:
         print(ticker + " MODEL GENERATION FAILED")
         return
     

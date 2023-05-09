@@ -327,7 +327,7 @@ def fitness_function(ticker, fitness_queue, individual, individual_index,
     # train the model initialized with GA schema and get RMSE
     
     if rmse is None:
-        fitness_queue.put(None)
+        fitness_queue.put((None, None))
         # handles download error case
     
     elif rmse == 0:

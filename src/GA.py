@@ -127,13 +127,13 @@ class GA:
         # initialize "empty" list to store fitness values
         
         for _ in range(self.population_size):
-            fit_tuple = fitness_queue.get()
+            fitness, index = fitness_queue.get()
             
-            if fit_tuple is None:
+            if fitness is None:
                 return None
                 # handles error return state
                 
-            fitnesses[fit_tuple[1]] = fit_tuple[0]
+            fitnesses[index] = fitness
             # set fitness values in correct place in list
         
         return fitnesses
