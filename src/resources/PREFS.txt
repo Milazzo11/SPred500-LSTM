@@ -1,0 +1,71 @@
+# GA PREFS
+# ========
+NUM_GENERATIONS=10
+POPULATION_SIZE=10
+CROSSOVER_RATE=0.9
+MUTATION_RATE=0.1
+ELITISM=True
+
+
+RANDOM_INITS=0.5
+# defines the fraction of the initial GA population that is randomly generated;
+# the rest is created based on the default prefernces and mutations of these
+# preferences, as well as at least one special case
+
+DEF_MUTATION_RATE=0.3
+# defines the mutation rate used when generating the mutated versions of the
+# default individul created during initial population generation
+
+TEST_RUNS=1
+# defines the number of times the LSTM should run for each individual's fitness evaluation
+
+FINAL_RUNS=10
+# defines the number of models to train with optimized schema
+
+GA_FIN_PLOT=True
+# generate additional models using schema from all individuals in the GA's final generation
+# (will not affect the finalized models trained using optimal schema)
+
+EVAL_PARTITION=0.2
+# the fraction of the available time-series data used for evaluation
+
+PRED_PLOT_FRAC=0.2
+# the fraction of the plot display consisting of the prediction line
+# (80% historical data, 20% forecast)
+
+
+# =====================================
+# BELOW VALUES ARE OPTIMIZABLE USING GA
+# =====================================
+
+
+# DEFAULT VALS
+# ============
+LOOKBACK_MULT=0.5
+# n_lookback = int(0.5 x n_forecast) + 1
+
+DATA_PERIOD=120
+# fetches and observes int(120) months of historical price data
+
+
+# DEFAULT LSTM SCHEMA
+# ===================
+LSTM_SCHEMA=100,None,None,None
+# LAYERS=LSTM(int(100)) *required, [No LSTM layer], [No LSTM layer],
+# [None is N=None, otherwise Dense(int(n_forecast * N)) + 2], Output_Layer
+
+DROPOUT=0.2,None,None,None
+# first Dropout(0.2) layer active by default; the rest inactive
+
+PATIENCE=3
+# enable early stopping by default
+# early stopping patience = int(3)
+
+ATTENTION=False,True
+# attention mechanism between LSTM layers disabled by default (there is only
+# one LSTM layer by default anyways, so it would not be implemented either way);
+# however, attention mechanism after LSTM layer(s) is enabled by default
+
+BATCH_SIZE=8
+EPOCHS=100
+# params used in training

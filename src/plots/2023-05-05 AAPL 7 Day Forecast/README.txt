@@ -1,0 +1,1 @@
+A plot generated using default model schema.
