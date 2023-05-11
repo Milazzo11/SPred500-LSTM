@@ -18,7 +18,6 @@ import GA_funcs as GAF
 from NN_prefs import load_prefs, schematize
 from LSTM import LSTM_NN
 from GA import GA
-from GA_funcs import *
 from tkinter import *
 from tkinter import ttk
 

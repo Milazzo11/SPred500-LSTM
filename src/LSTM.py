@@ -6,14 +6,12 @@ Stock preciction LSTM model.
 
 
 import os
-import sys
 import math
 import datetime
 import numpy as np
 import pandas as pd
 import yfinance as yf
 import matplotlib.pyplot as plt
-import tensorflow as tf
 from Attention import Attention
 from tensorflow.keras.layers import LSTM, Dropout, Flatten, Dense
 from tensorflow.keras.models import Sequential
