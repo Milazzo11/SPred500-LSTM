@@ -1,5 +1,5 @@
-A LSTM neural network time-series modeling application for forecasting
-stock price data; implementing several learning and hyper-parameter 
+An LSTM neural network time-series modeling application for forecasting
+stock price data, implementing several learning and hyper-parameter 
 optimization features, including a custom attention mechanism, early stopping, 
 dropout regularization, and genetic algorithm hyper-parameter optimization.
 
