@@ -1,7 +1,7 @@
 An LSTM neural network time-series modeling application for forecasting stock price
-data, implementing several advanced learning and hyperparameter optimization
-features, including a custom attention mechanism, early stopping, dropout
-regularization, and genetic algorithm-based hyperparameter tuning.
+data, implementing advanced learning and hyperparameter optimization techniques,
+including a custom attention mechanism, early stopping, dropout regularization,
+and genetic algorithm-based hyperparameter tuning.
 
 Multiprocessing is also employed to increase program efficiency, and everything
 is wrapped in an easy-to-use GUI.
